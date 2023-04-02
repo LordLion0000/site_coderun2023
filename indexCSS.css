@@ -1,9 +1,10 @@
+@import "bootstrap.min.css";
 body{
     margin: 0;
 }
 
-navBackground {
-    background: #1a2066;
+.navBar {
+    background-color: #1a2066;
 }
 
 main {
