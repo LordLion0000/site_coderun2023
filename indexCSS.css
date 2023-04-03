@@ -1,3 +1,4 @@
+@import "bootstrap.min.css";
 body{
     margin: 0;
     background-color: black;
@@ -22,4 +23,20 @@ body{
     font-size: 22px;
     line-height: 1;
     margin: 0 0 5px;
+}
+
+.navBar {
+    background-color: #1a2066;
+}
+
+main {
+    background-image: url("bg_final.png");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+p {
+    padding: 0;
+    margin: 0;
 }
