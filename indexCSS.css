@@ -1,5 +1,11 @@
 body{
     margin: 0;
+    background-color: black;
+        background-image: url('');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
 }
 .countdown {
     display: flex;
