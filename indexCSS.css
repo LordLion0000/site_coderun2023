@@ -8,8 +8,8 @@ body{
 }
 
 main {
-    background-image: url("bg_site.jpg");
-    opacity: 0.75;
+    background-image: url("bg_final.png");
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
