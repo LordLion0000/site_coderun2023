@@ -1,13 +1,20 @@
 @import "bootstrap.min.css";
-body{
-    margin: 0;
-    background-color: black;
-        background-image: url('');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
+@font-face {
+    font-family: CustomFont;
+    src: url("abeeZee-Regular.ttf");
 }
+body {
+    font-family: CustomFont;
+}
+/*body{*/
+/*    margin: 0;*/
+/*    background-color: black;*/
+/*        background-image: url('');*/
+/*        background-size: cover;*/
+/*        background-repeat: no-repeat;*/
+/*        background-attachment: fixed;*/
+/*        background-position: center;*/
+/*}*/
 .countdown {
     display: flex;
 }
@@ -20,7 +27,7 @@ body{
 
 .time h3 {
     font-weight: bolder;
-    font-size: 22px;
+    font-size: 50px;
     line-height: 1;
     margin: 0 0 5px;
 }
@@ -30,7 +37,7 @@ body{
 }
 
 main {
-    background-image: url("bg_final.png");
+    background-image: url("bg_fara_blur.png");
 
     background-repeat: no-repeat;
     background-size: cover;
