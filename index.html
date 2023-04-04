@@ -1,113 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
-      crossorigin="anonymous"
-    />
-    <title>Coderun</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid align-items-end">
-        <a class="navbar-brand" href="#"
-          ><img src="logoCR-white.png" width="150vh" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="indexCSS.css" rel="stylesheet">
+    <title>CodeRun</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-info-subtle">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="logoCR-white.png" alt="" style="height: 3rem">
+        </a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item me-auto">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Map</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Partners</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">3.5%</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Contact</a
-              >
-            </li>
-            <li class="nav-item"></li>
-          </ul>
+        <div class="collapse navbar-collapse justify-content-end px-4" id="navbarNavAltMarkup">
+            <div class="navbar-nav align-items-center">
+                <a class="nav-link text-white px-3 fs-5 fw-bold" aria-current="page" href="about.html">About</a>
+                <a class="nav-link text-white px-3 fs-5 fw-bold" href="#">Map</a>
+                <a class="nav-link text-white px-3 fs-5 fw-bold" href="schedule.html">Schedule</a>
+                <a class="nav-link text-white px-3 fs-5 fw-bold" href="collaborators.html">Collaborators</a>
+                <a class="nav-link text-white px-3 fs-5 fw-bold" href="team.html">Team</a>
+                <a class="nav-link text-white px-3 fs-5 fw-bold" href="https://bestcj.ro/3-5-percent-program/">3.5%</a>
+            </div>
         </div>
-      </div>
-    </nav>
+    </div>
+</nav>
+<main class="container-fluid text-center text-white" style="height: auto">
     <div class="container text-center">
-      <div class="row">
-        <div class="col pt-5 "> 
-          <img src="coderun3_logo.png" width="300vh" alt="" />
-                  <p1>18-23 April</p1>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 pt-5 ">
+                <img class="img-fluid" alt="" src="coderun3_logo.png" style="width: 30rem">
+            </div>
+            <div class="col-12 text-white text-center fs-2 fw-bold">
+                18-23 April
+            </div>
+            <!--            <div class="col pt-3"><img alt="" src="poza1.png" width="300vh"/></div>-->
         </div>
-        <div class="col pt-3"><img src="poza1.png" width="300vh" alt="" /></div>
-      </div>
     </div>
-    <div class="row">
-      <div class="col"></div>
-      <div class="col"><h2>Days until code.run;</h2></div>
-      <div class="col"></div>
-    </div>
-    <div class="row">
-      <div class="col"></div>
-      <div class="col">
-        <div id="countdown" class="countdown">
-          <div class="time">
-            <h3 id="days"></h3>
-            <small>days</small>
-          </div>
-          <div class="time">
-            <h3 id="hours"></h3>
-            <small>hours</small>
-          </div>
-          <div class="time">
-            <h3 id="minutes"></h3>
-            <small>minutes</small>
-          </div>
-          <div class="time">
-            <h3 id="seconds"></h3>
-            <small>seconds</small>
-          </div>
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 text-center text-white fs-1 fw-bolder pt-5 ">
+            Days Until Code.Run;
         </div>
-      </div>
-      <div class="col"></div>
+    </div>
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 d-flex align-items-center justify-content-center" id="countdown">
+            <div class="time">
+                <h3 id="days"></h3>
+                <small>days</small>
+            </div>
+            <div class="time">
+                <h3 id="hours"></h3>
+                <small>hours</small>
+            </div>
+            <div class="time">
+                <h3 id="minutes"></h3>
+                <small>minutes</small>
+            </div>
+            <div class="time">
+                <h3 id="seconds"></h3>
+                <small>seconds</small>
+            </div>
+        </div>
+
+    </div>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-12">
+                <img class="img-fluid" src="person.jpg" alt="" style="height: 30rem">
+            </div>
+            <button class="col-12 btn btn-outline-primary mt-3 mb-5" type="button">Google Maps</button>
+        </div>
     </div>
 
-    <div class="container text-center">
-      <div class="row">
-        <div class="col pt-3"><img src="poza1.png" width="300vh" alt="" /></div>
-      </div>
-<button type="button" class="btn btn-outline-primary mt-3">Google Maps</button>
+</main>
+<footer class="container-fluid bg-info-subtle text-center">
+    <div class="row align-items-center align-content-center justify-content-center py-1">
+        <div class="col-12 col-md-4">
+            <img alt="" class="img-fluid" src="ut_Logo_Alb.png" style="height: 7rem;">
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-column align-text-center text-white my-1">
+            <p class="my-2">Strada Constantin Daicoviciu 15, Cluj-Napoca 400020</p>
+            <a class="my-2" href="https://bestcj.ro/">cluj@best-eu.org</a>
+            <p class="my-2">0712121212</p>
+            <div class="row-cols-3 my-1">
+                <a href="https://www.facebook.com/BESTcluj/?locale=ro_RO">
+                    <img alt="" class="img-fluid border rounded-3" src="facebook-alb.png" style="width: 3rem">
+                </a>
+                <a href="https://www.instagram.com/best_clujnapoca/">
+                    <img alt="" class="img-fluid border rounded-3" src="instagram-alb.png" style="width: 3rem">
+                </a>
+                <a href="https://www.linkedin.com/company/best-cluj-napoca">
+                    <img alt="" class="img-fluid border rounded-3" src="linkedin-alb.png" style="width: 3rem">
+                </a>
+                <a href="https://www.tiktok.com/@code.run?_t=8bBINcsooZ8&_r=1">
+                    <img alt="" class="img-fluid border rounded-3" src="tiktok-alb.png" style="width: 3rem">
+                </a>
+            </div>
 
-      <script src="indexJS.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        </div>
+        <div class="col-12 col-md-4">
+            <img alt="" class="img-fluid" src="bestcj_signature_white.png" style="height: 7rem;">
+        </div>
+    </div>
+</footer>
+<script src="indexJS.js"></script>
+<script
+        crossorigin="anonymous"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+></script>
+</body>
 </html>
