@@ -4,7 +4,7 @@ const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
 
 
-const coderun = new Date('April 18 2023 10:00:00');
+const coderun = new Date('April 16 2023 10:00:00');
 
 function update_countdown_time()
 {
