@@ -59,6 +59,21 @@ p {
     border-radius: 2vh;
     padding: 5px;
 }
+.apply1 {
+    text-decoration: none;
+    color: white;
+    border: #fe02a7;
+    background-color: #fe02a7;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bolder;
+    border-style: solid;
+    border-radius: 2vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
  hr{
     margin: 3px;
     width: 0;
